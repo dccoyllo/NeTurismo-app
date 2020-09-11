@@ -16,6 +16,8 @@ import {MessagesDemo} from './components/MessagesDemo';
 import {ChartsDemo} from './components/ChartsDemo';
 import {MiscDemo} from './components/MiscDemo';
 import {EmptyPage} from './components/EmptyPage';
+import {inicioPage} from './components/inicioPage';
+import {loginPage} from './components/loginPage';
 import {Documentation} from "./components/Documentation";
 import 'primereact/resources/themes/nova-light/theme.css';
 import 'primereact/resources/primereact.min.css';
@@ -129,7 +131,9 @@ class App extends Component {
             {
                 label: 'Template Pages', icon: 'pi pi-fw pi-file',
                 items: [
-                    {label: 'Empty Page', icon: 'pi pi-fw pi-circle-off', to: '/empty'}
+                    {label: 'Empty Page', icon: 'pi pi-fw pi-circle-off', to: '/empty'},
+                    {label: 'Inicio', icon: 'pi pi-fw pi-circle-off', to: '/index'},
+                    {label: 'Login', icon: 'pi pi-fw pi-circle-off', to: '/login'}
                 ]
             },
             {
@@ -247,6 +251,8 @@ class App extends Component {
                     <Route path="/charts" component={ChartsDemo} />
                     <Route path="/misc" component={MiscDemo} />
                     <Route path="/empty" component={EmptyPage} />
+                    <Route path="/index" component={inicioPage} />
+                    <Route path="/login" component={loginPage} />
                     <Route path="/documentation" component={Documentation} />
                 </div>
 
