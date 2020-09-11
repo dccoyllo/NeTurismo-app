@@ -208,7 +208,7 @@ class App extends Component {
     }
 
     render() {
-        const logo = this.state.layoutColorMode === 'dark' ? 'assets/layout/images/logo-white.svg': 'assets/layout/images/logo.svg';
+        const logo = this.state.layoutColorMode === 'dark' ? 'assets/layout/images/loguito.png': 'assets/layout/images/loguito.png';
 
         const wrapperClass = classNames('layout-wrapper', {
             'layout-overlay': this.state.layoutMode === 'overlay',
